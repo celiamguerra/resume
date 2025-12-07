@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Celia Guerra - Humanitarian & Community Engagement</title>
+		<meta name="description"
+			content="Humanitarian volunteer with Uruguayan Red Cross. Specialized in Disaster Risk Reduction, Community Engagement, and Emergency Operations.">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+				background: #fafafa;
+				color: #171717;
+				font-size: 14px;
+				line-height: 1.5;
+			}
+
+			.container {
+				max-width: 672px;
+				margin: 0 auto;
+				padding: 3rem 1rem;
+				background: white;
+			}
+
+			.back-link {
+				display: inline-block;
+				margin-bottom: 2rem;
+				color: #171717;
+				text-decoration: none;
+				font-size: 0.875rem;
+			}
+
+			.back-link:hover {
+				text-decoration: underline;
+			}
+
+			header {
+				margin-bottom: 2rem;
+			}
+
+			h1 {
+				font-size: 2rem;
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+			}
+
+			.subtitle {
+				font-size: 0.875rem;
+				color: #737373;
+				margin-bottom: 1rem;
+			}
+
+			.stats {
+				display: flex;
+				gap: 2rem;
+				flex-wrap: wrap;
+				padding: 1rem;
+				background: #f9fafb;
+				border-radius: 0.5rem;
+				margin-bottom: 1.5rem;
+			}
+
+			.stat {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.stat-number {
+				font-size: 1.5rem;
+				font-weight: 700;
+				color: #171717;
+			}
+
+			.stat-label {
+				font-size: 0.75rem;
+				color: #737373;
+			}
+
+			section {
+				margin-bottom: 2rem;
+			}
+
+			h2 {
+				font-size: 1.25rem;
+				font-weight: 700;
+				margin-bottom: 1rem;
+				padding-bottom: 0.5rem;
+				border-bottom: 2px solid #e5e5e5;
+			}
+
+			h3 {
+				font-size: 1rem;
+				font-weight: 600;
+				margin-bottom: 0.5rem;
+				margin-top: 1.5rem;
+				color: #171717;
+			}
+
+			.intro {
+				font-size: 0.875rem;
+				color: #171717;
+				line-height: 1.6;
+				margin-bottom: 1.5rem;
+			}
+
+			.highlight-box {
+				background: #f9fafb;
+				border-left: 3px solid #171717;
+				padding: 1rem;
+				margin: 1rem 0;
+			}
+
+			.highlight-box strong {
+				color: #171717;
+			}
+
+			.training-item {
+				margin-bottom: 1rem;
+				padding-left: 1rem;
+				border-left: 2px solid #e5e5e5;
+			}
+
+			.training-name {
+				font-weight: 600;
+				color: #171717;
+				font-size: 0.875rem;
+			}
+
+			.training-meta {
+				font-size: 0.8rem;
+				color: #737373;
+				margin-top: 0.25rem;
+			}
+
+			.training-hours {
+				color: #171717;
+				font-weight: 500;
+			}
+
+			.activity-item {
+				margin-bottom: 1rem;
+				padding: 1rem;
+				background: #f9fafb;
+				border-radius: 0.375rem;
+			}
+
+			.activity-title {
+				font-weight: 600;
+				color: #171717;
+				margin-bottom: 0.5rem;
+				font-size: 0.875rem;
+			}
+
+			.activity-desc {
+				font-size: 0.875rem;
+				color: #171717;
+				line-height: 1.6;
+			}
+
+			.activity-meta {
+				font-size: 0.8rem;
+				color: #737373;
+				margin-top: 0.5rem;
+			}
+
+			.skills-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 1.5rem;
+				margin-top: 1rem;
+			}
+
+			.skill-category h4 {
+				font-size: 0.875rem;
+				font-weight: 600;
+				color: #171717;
+				margin-bottom: 0.5rem;
+			}
+
+			.skill-category ul {
+				list-style: none;
+				padding: 0;
+			}
+
+			.skill-category li {
+				font-size: 0.875rem;
+				color: #171717;
+				padding: 0.25rem 0;
+				padding-left: 1rem;
+				position: relative;
+			}
+
+			.skill-category li:before {
+				content: "•";
+				position: absolute;
+				left: 0;
+				color: #737373;
+			}
+
+			.timeline {
+				position: relative;
+				padding-left: 2rem;
+			}
+
+			.timeline:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: 2px;
+				background: #e5e5e5;
+			}
+
+			.timeline-item {
+				position: relative;
+				margin-bottom: 1.5rem;
+			}
+
+			.timeline-item:before {
+				content: '';
+				position: absolute;
+				left: -2.5rem;
+				top: 0.5rem;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background: #171717;
+			}
+
+			.timeline-date {
+				font-size: 0.8rem;
+				color: #171717;
+				font-weight: 500;
+				margin-bottom: 0.25rem;
+			}
+
+			.timeline-content {
+				font-size: 0.875rem;
+				color: #171717;
+			}
+
+			@media (max-width: 640px) {
+				.container {
+					padding: 2rem 1rem;
+				}
+
+				h1 {
+					font-size: 1.5rem;
+				}
+
+				.stats {
+					gap: 1rem;
+				}
+
+				.skills-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			@media print {
+				body {
+					background: white;
+				}
+
+				.container {
+					padding: 0;
+				}
+
+				.back-link {
+					display: none;
+				}
+
+				a {
+					color: inherit;
+					text-decoration: none;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<a href="index.html" class="back-link">← Back to main resume</a>
+
+			<header>
+				<h1>Humanitarian & Community Engagement</h1>
+				<p class="subtitle">Active Volunteer with Uruguayan Red Cross</p>
+
+				<div class="stats">
+					<div class="stat">
+						<span class="stat-number">252+</span>
+						<span class="stat-label">Total Hours</span>
+					</div>
+					<div class="stat">
+						<span class="stat-number">160+</span>
+						<span class="stat-label">Training Hours</span>
+					</div>
+					<div class="stat">
+						<span class="stat-number">36+</span>
+						<span class="stat-label">Field Activity Hours</span>
+					</div>
+					<div class="stat">
+						<span class="stat-number">2024</span>
+						<span class="stat-label">Active Since</span>
+					</div>
+				</div>
+			</header>
+
+			<section>
+				<p class="intro">
+					Dedicated volunteer with the Uruguayan Red Cross, specializing in Disaster Risk Reduction (DRR),
+					Community Engagement and Accountability (CEA), Protection Gender & Inclusion (PGI), and Emergency
+					Preparedness. Actively pursuing expertise in community resilience, early warning systems, and
+					anticipatory action to support vulnerable populations and strengthen humanitarian response capacity.
+				</p>
+			</section>
+
+			<div class="highlight-box">
+				<strong>Focus Areas:</strong> Disaster Risk Reduction (DRR) • Community Engagement & Accountability
+				(CEA) • Protection, Gender & Inclusion (PGI) • Emergency Preparedness • Community Resilience • Early
+				Warning Systems
+			</div>
+
+			<section>
+				<h2>Professional Training & Certifications</h2>
+
+				<h3>Emergency Management & Leadership</h3>
+				<div class="training-item">
+					<div class="training-name">Leadership and Team Management in Emergency Operations</div>
+					<div class="training-meta">
+						<span class="training-hours">30 hours</span> • In-person training
+					</div>
+				</div>
+
+				<div class="training-item">
+					<div class="training-name">Community Early Warning Systems (CEWS)</div>
+					<div class="training-meta">
+						<span class="training-hours">30 hours</span> • September 2024 • In-person training
+					</div>
+				</div>
+
+				<div class="training-item">
+					<div class="training-name">Anticipatory Action</div>
+					<div class="training-meta">
+						<span class="training-hours">30 hours</span> • November 2024 • In-person training
+					</div>
+				</div>
+
+				<div class="training-item">
+					<div class="training-name">First Aid Operator</div>
+					<div class="training-meta">
+						<span class="training-hours">30 hours</span> • May 2025 • In-person training
+					</div>
+				</div>
+
+				<h3>Protection, Gender & Inclusion</h3>
+				<div class="training-item">
+					<div class="training-name">Protection, Gender and Inclusion (PGI) Comprehensive Training</div>
+					<div class="training-meta">
+						<span class="training-hours">24.5 hours</span> • August-September 2024 • Hybrid (online &
+						in-person)
+					</div>
+				</div>
+
+				<div class="training-item">
+					<div class="training-name">Saying No to Sexual Misconduct</div>
+					<div class="training-meta">
+						<span class="training-hours">1.5 hours</span> • October 2025 • Online
+					</div>
+				</div>
+
+				<h3>Assessment & Technical Skills</h3>
+				<div class="training-item">
+					<div class="training-name">The Nexus Environmental Assessment Tool (NEAT+)</div>
+					<div class="training-meta">
+						<span class="training-hours">10 hours</span> • November 2024 • In-person training
+					</div>
+				</div>
+
+				<div class="training-item">
+					<div class="training-name">Emergency Needs Assessment (ENA)</div>
+					<div class="training-meta">
+						<span class="training-hours">1 hour</span> • November 2025 • Online
+					</div>
+				</div>
+
+				<div class="training-item">
+					<div class="training-name">DREF (Disaster Relief Emergency Fund) - Modules 1 & 2</div>
+					<div class="training-meta">
+						<span class="training-hours">4 hours</span> • Online training
+					</div>
+				</div>
+
+				<h3>Health & Safety</h3>
+				<div class="training-item">
+					<div class="training-name">Pediatric First Aid</div>
+					<div class="training-meta">
+						<span class="training-hours">6 hours</span> • October 2024 • In-person training
+					</div>
+				</div>
+
+				<div class="training-item">
+					<div class="training-name">First Aid</div>
+					<div class="training-meta">
+						<span class="training-hours">6 hours</span> • February 2024 • In-person training
+					</div>
+				</div>
+
+				<div class="training-item">
+					<div class="training-name">Stay Safe 2.0 Global Edition (Level 1 & 2)</div>
+					<div class="training-meta">
+						<span class="training-hours">4 hours</span> • October 2025 • Online security training
+					</div>
+				</div>
+
+				<h3>Humanitarian Support</h3>
+				<div class="training-item">
+					<div class="training-name">Restoring Family Links (RFL)</div>
+					<div class="training-meta">
+						<span class="training-hours">5 hours</span> • October 2025 • Online
+					</div>
+				</div>
+
+				<h3>Regional Engagement</h3>
+				<div class="training-item">
+					<div class="training-name">Surge Capacity CREPD</div>
+					<div class="training-meta">
+						<span class="training-hours">1.5 hours</span> • May 2025 • Online workshop
+					</div>
+				</div>
+
+				<div class="training-item">
+					<div class="training-name">Regional Climate Change Champions Network (CREPD) - 5th & 6th Meetings
+					</div>
+					<div class="training-meta">
+						<span class="training-hours">2 hours total</span> • October & December 2024 • Online workshops
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Field Activities & Projects</h2>
+
+				<div class="activity-item">
+					<div class="activity-title">National Dialogue Platform on Early Action and Early Warning - Logistics
+						Support</div>
+					<div class="activity-desc">
+						Provided comprehensive logistics support for the National Dialogue Platform coordinating
+						government entities, humanitarian organizations, and stakeholders on early warning systems and
+						anticipatory action strategies. Facilitated coordination between multiple actors to strengthen
+						national disaster preparedness capacity.
+					</div>
+					<div class="activity-meta">December 2024 • 20 hours • National coordination with government entities
+					</div>
+				</div>
+
+				<div class="activity-item">
+					<div class="activity-title">Aguas Corrientes Microproject</div>
+					<div class="activity-desc">
+						Participated in planning, coordination, and implementation of community-based resilience
+						microproject in Aguas Corrientes. Contributed to workshop preparation, logistics coordination,
+						and community engagement activities focused on disaster preparedness and risk reduction.
+					</div>
+					<div class="activity-meta">January 2025 • Multiple coordination meetings and field activities</div>
+				</div>
+
+				<div class="activity-item">
+					<div class="activity-title">Community Resilience Project</div>
+					<div class="activity-desc">
+						Ongoing involvement in community resilience initiatives, supporting planning meetings and
+						coordination efforts to strengthen local capacity for disaster response and community
+						preparedness.
+					</div>
+					<div class="activity-meta">2025 - Ongoing • Monthly coordination meetings</div>
+				</div>
+
+				<div class="activity-item">
+					<div class="activity-title">Heat Wave Prevention Campaign - Los Reyes Neighborhood</div>
+					<div class="activity-desc">
+						Community outreach and education campaign focused on heat wave prevention, providing information
+						and resources to vulnerable populations in Los Reyes neighborhood.
+					</div>
+					<div class="activity-meta">January 2024 • 5.5 hours • Community education</div>
+				</div>
+
+				<div class="activity-item">
+					<div class="activity-title">Neighborhood Improvement Initiative</div>
+					<div class="activity-desc">
+						Participated in community-based neighborhood improvement project, supporting coordination and
+						implementation of activities focused on enhancing community resilience and quality of life.
+					</div>
+					<div class="activity-meta">March 2024 • 9 hours • Community development</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Leadership & Governance</h2>
+
+				<div class="timeline">
+					<div class="timeline-item">
+						<div class="timeline-date">2025</div>
+						<div class="timeline-content">
+							<strong>Council Member - Montevideo Branch</strong><br>
+							Active participation in governance and strategic planning for the Montevideo branch of
+							Uruguayan Red Cross
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-date">December 2024</div>
+						<div class="timeline-content">
+							<strong>Women in Humanitarian Action Forum</strong><br>
+							Participated in regional forum discussing women's leadership and gender inclusion in
+							humanitarian response
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-date">2024-2025</div>
+						<div class="timeline-content">
+							<strong>Regional Climate Change Champions Network (CREPD)</strong><br>
+							Active participant in regional network coordinating climate adaptation and disaster risk
+							reduction initiatives
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Skills & Competencies Developed</h2>
+
+				<div class="skills-grid">
+					<div class="skill-category">
+						<h4>Emergency Management</h4>
+						<ul>
+							<li>Early warning systems design</li>
+							<li>Anticipatory action planning</li>
+							<li>Emergency needs assessment</li>
+							<li>Crisis coordination</li>
+							<li>Team leadership in emergencies</li>
+						</ul>
+					</div>
+
+					<div class="skill-category">
+						<h4>Community Engagement</h4>
+						<ul>
+							<li>Community resilience building</li>
+							<li>Participatory approaches</li>
+							<li>Stakeholder coordination</li>
+							<li>Community education</li>
+							<li>Vulnerability assessment</li>
+						</ul>
+					</div>
+
+					<div class="skill-category">
+						<h4>Protection & Inclusion</h4>
+						<ul>
+							<li>Gender-sensitive programming</li>
+							<li>Protection mainstreaming</li>
+							<li>Safeguarding principles</li>
+							<li>Inclusive design</li>
+							<li>Accountability mechanisms</li>
+						</ul>
+					</div>
+
+					<div class="skill-category">
+						<h4>Coordination & Logistics</h4>
+						<ul>
+							<li>Multi-stakeholder coordination</li>
+							<li>Government liaison</li>
+							<li>Event logistics</li>
+							<li>Project planning</li>
+							<li>Resource management</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Technical Background & Digital Transformation</h2>
+				<p class="intro">
+					Solution Architect and Product Owner with 10+ years building scalable digital products. Bringing
+					technical expertise to humanitarian action, with focus on digital solutions for disaster risk
+					reduction, early warning systems, and community engagement platforms.
+				</p>
+				<div class="highlight-box">
+					<strong>Technical Skills Applied to Humanitarian Context:</strong> Solution Architecture • Digital
+					Transformation • Data Analytics • Platform Development • Agile Project Management • Team
+					Coordination
+				</div>
+			</section>
+
+			<section>
+				<h2>Future Aspirations</h2>
+				<p class="intro">
+					Building on this foundation, I am actively pursuing opportunities in surge deployment, humanitarian
+					response coordination, and digital solutions for disaster risk reduction. My goal is to bridge my
+					technical expertise in digital transformation with humanitarian action, particularly in developing
+					technology-enabled early warning systems, community engagement platforms, and data-driven approaches
+					to disaster preparedness and response.
+				</p>
+				<p class="intro">
+					I am particularly interested in opportunities with IFRC, ICRC, UN agencies (OCHA, UNDP, WFP), and
+					international NGOs working at the intersection of technology and humanitarian action.
+				</p>
+			</section>
+		</div>
+	</body>
+
+</html>
